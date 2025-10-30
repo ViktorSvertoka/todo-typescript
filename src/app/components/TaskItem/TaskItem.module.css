@@ -1,0 +1,57 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--task-bg);
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: var(--task-shadow);
+  transition: transform 0.15s ease, box-shadow 0.25s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--task-hover-shadow);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--text-primary);
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.removeButton {
+  background: var(--danger);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.25s ease, transform 0.1s ease;
+}
+
+.removeButton:hover {
+  background: var(--danger-hover);
+  transform: scale(1.05);
+}

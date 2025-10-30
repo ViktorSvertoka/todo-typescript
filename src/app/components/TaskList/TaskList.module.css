@@ -1,0 +1,67 @@
+.container {
+  margin: 40px auto;
+  max-width: 500px;
+  padding: 28px;
+  border-radius: 16px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.form {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  background: var(--input-bg);
+  color: var(--text-primary);
+  transition: border-color 0.25s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.addButton {
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: opacity 0.25s ease, transform 0.1s ease;
+}
+
+.addButton:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
+
+.empty {
+  text-align: center;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.tasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
